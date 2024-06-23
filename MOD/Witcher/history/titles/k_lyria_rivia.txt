@@ -12,6 +12,7 @@
 	effect = { set_coa = k_lyria_rivia_nilfgaard}
 	holder=30002
 }
+1274.5.12 = { holder = 30000}	
 1274.11.15 = {
 	liege = e_nilfgaard
 	effect = { set_coa = k_lyria_rivia_nilfgaard }

@@ -25,16 +25,16 @@ use_purple_living_bone_and_conynhaela;Use Purple Living Bone and Conynhaela;;;;;
 use_purple_living_bone_and_conynhaela_desc;I can use these herb together to cure my injuries.;;;;;;;;;;;;;x
 # banker_decisions_W;;;;;;;;;;;;;;
 borrow_money;Take a Loan;;;;;;;;;;;;;x
-borrow_money_desc;I can request a loan from the bank, the term to repay the loan is 10 years with 20 percent interest. The size of the loan can be up to 300¤.;;;;;;;;;;;;;x
+borrow_money_desc;I can request a loan from the bank, the term to repay the loan is 10 years with 20 percent interest. The size of the loan can be up to 300ï¿½.;;;;;;;;;;;;;x
 bank_is_deliberating;Bank is already deliberating the size of loan;;;;;;;;;;;;;x
 unsettled_debts;Have unsettled debt with bank;;;;;;;;;;;;;x
 decide_size_of_loan;The bank will decide the size of loan.;;;;;;;;;;;;;x
 repay_old_loan_100;Repay an old loan;;;;;;;;;;;;;x
-repay_old_loan_100_desc;I can repay an old unsettled loan of 100¤.;;;;;;;;;;;;;x
+repay_old_loan_100_desc;I can repay an old unsettled loan of 100ï¿½.;;;;;;;;;;;;;x
 repay_old_loan_200;Repay an old loan;;;;;;;;;;;;;x
-repay_old_loan_200_desc;I can repay an old unsettled loan of 200¤.;;;;;;;;;;;;;x
+repay_old_loan_200_desc;I can repay an old unsettled loan of 200ï¿½.;;;;;;;;;;;;;x
 repay_old_loan_300;Repay an old loan;;;;;;;;;;;;;x
-repay_old_loan_300_desc;I can repay an old unsettled loan of 300¤.;;;;;;;;;;;;;x
+repay_old_loan_300_desc;I can repay an old unsettled loan of 300ï¿½.;;;;;;;;;;;;;x
 # capital_movement_decisions_W;;;;;;;;;;;;;;
 make_wyzima_capital;Make Wyzima Capital;;;;;;;;;;;;;x
 make_wyzima_capital_desc;The city of Wyzima has seen better days, but no one can deny its symbolic power. If you so wish, you may restore it as the capital of the Kingdom.;;;;;;;;;;;;;x
@@ -97,29 +97,29 @@ employ_sorcerer;Invite Sorcerer to Court;;;;;;;;;;;;;x
 employ_sorcerer_desc;Invite a learned sorcerer from one of the magic academies.;;;;;;;;;;;;;x
 # faction_decisions_W;;;;;;;;;;;;;;
 faction_lower_crown_levy_ultimatum;Demand Lower Crown Levy;;;;;;;;;;;;;x
-faction_lower_crown_levy_ultimatum_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding lower Crown Levy. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
+faction_lower_crown_levy_ultimatum_desc;Present an ultimatum to ï¿½Y[Root.Liege.GetBestName]ï¿½!, demanding lower Crown Levy. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
 faction_lower_crown_obligation_ultimatum;Demand Lower Crown Obligation;;;;;;;;;;;;;x
-faction_lower_crown_obligation_ultimatum_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding lower Crown Obligation. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
+faction_lower_crown_obligation_ultimatum_desc;Present an ultimatum to ï¿½Y[Root.Liege.GetBestName]ï¿½!, demanding lower Crown Obligation. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
 faction_lower_tolerance_ultimatum;Demand Lower Tolerance;;;;;;;;;;;;;x
-faction_lower_tolerance_ultimatum_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding lower Tolerance. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
+faction_lower_tolerance_ultimatum_desc;Present an ultimatum to ï¿½Y[Root.Liege.GetBestName]ï¿½!, demanding lower Tolerance. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
 faction_raise_tolerance_ultimatum;Demand Higher Tolerance;;;;;;;;;;;;;x
-faction_raise_tolerance_ultimatum_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding higher Tolerance. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
+faction_raise_tolerance_ultimatum_desc;Present an ultimatum to ï¿½Y[Root.Liege.GetBestName]ï¿½!, demanding higher Tolerance. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
 faction_succ_tanistry_ultimatum;Demand Succession by Tanistry;;;;;;;;;;;;;x
-faction_succ_tanistry_ultimatum_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding succession by Tanistry. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
+faction_succ_tanistry_ultimatum_desc;Present an ultimatum to ï¿½Y[Root.Liege.GetBestName]ï¿½!, demanding succession by Tanistry. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
 faction_succ_ultimogeniture_ultimatum;Demand Succession by Ultimogeniture;;;;;;;;;;;;;x
-faction_succ_ultimogeniture_ultimatum_desc;Present an ultimatum to §Y[Root.Liege.GetBestName]§!, demanding succession by Ultimogeniture. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
+faction_succ_ultimogeniture_ultimatum_desc;Present an ultimatum to ï¿½Y[Root.Liege.GetBestName]ï¿½!, demanding succession by Ultimogeniture. If [Root.Liege.GetSubjectPronoun] refuses to comply, your Faction will rise in revolt.;;;;;;;;;;;;;x
 # flaming_rose_decisions_W;;;;;;;;;;;;;;
 vassalize_flaming_rose;Vassalize the Order of the Flaming Rose;;;;;;;;;;;;;x
 vassalize_flaming_rose_desc;As a ruler who have given a castle to the Order of the Flaming Rose, it is within my power to vassalize the Order at the cost of 500 gold.;;;;;;;;;;;;;x
 expel_flaming_rose;Expel the Order of the Flaming Rose;;;;;;;;;;;;;x
 expel_flaming_rose_desc;I can drive the Order of the Flaming Rose from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
-donate_money_to_flaming_rose;Donate 300¤ to the Order of the Flaming Rose;;;;;;;;;;;;;x
+donate_money_to_flaming_rose;Donate 300ï¿½ to the Order of the Flaming Rose;;;;;;;;;;;;;x
 donate_money_to_flaming_rose_desc;I can donate money to the Order of the Flaming Rose in exchange for Piety.;;;;;;;;;;;;;x
 # magic_decisions_W;;;;;;;;;;;;;;
 send_child_to_aretuza;Send [Root.GetFirstName] to Aretuza Academy;;;;;;;;;;;;;x
-send_child_to_aretuza_desc;Send §Y[Root.GetFirstName]§! to Aretuza Academy to learn to control [Root.GetHerHis] magic talent.;;;;;;;;;;;;;x
+send_child_to_aretuza_desc;Send ï¿½Y[Root.GetFirstName]ï¿½! to Aretuza Academy to learn to control [Root.GetHerHis] magic talent.;;;;;;;;;;;;;x
 send_child_to_ban_ard;Send [Root.GetFirstName] to Ban Ard Academy;;;;;;;;;;;;;x
-send_child_to_ban_ard_desc;Send §Y[Root.GetFirstName]§! to Ban Ard Academy to learn to control [Root.GetHerHis] magic talent.;;;;;;;;;;;;;x
+send_child_to_ban_ard_desc;Send ï¿½Y[Root.GetFirstName]ï¿½! to Ban Ard Academy to learn to control [Root.GetHerHis] magic talent.;;;;;;;;;;;;;x
 # marriage_decisions_W;;;;;;;;;;;;;;
 marry_courtiers_human;Arrange Courtier Marriages;;;;;;;;;;;;;x
 marry_courtiers_human_desc;Arrange marriages for your human courtiers, marrying them to each other where possible. Will not affect courtiers of your dynasty.;;;;;;;;;;;;;x
@@ -154,7 +154,7 @@ pilgrimage;Go on a Pilgrimage;;;;;;;;;;;;;x
 pilgrimage_desc;Some faithful followers of [Root.Religion.GetRandomGodName] choose to make a pilgrimage at some point in their lives. The devout pilgrim is prepared to travel long distances in order to visit the holy place of the faith.;;;;;;;;;;;;;x
 # realm_decisions_W;;;;;;;;;;;;;;
 create_the_north;Unite the North;;;;;;;;;;;;;x
-create_the_north_desc;The ever-existing threat from South can only be stopped by unifying the North under one crown. You need §Ythree§! of the major Northern kingdoms to do that.;;;;;;;;;;;;;x
+create_the_north_desc;The ever-existing threat from South can only be stopped by unifying the North under one crown. You need ï¿½Ythreeï¿½! of the major Northern kingdoms to do that.;;;;;;;;;;;;;x
 create_dwarf_empire;Create Dwarf Empire;;;;;;;;;;;;;x
 create_dwarf_empire_desc;Create a new land for dwarves equal to ancient dwarven kingdoms before the humans appeared.;;;;;;;;;;;;;x
 create_hen_caerme;Create Hen Caerme;;;;;;;;;;;;;x
@@ -182,7 +182,7 @@ have_court_mage_cast_charm_spell;Cast Charm (Court Mage);;;;;;;;;;;;;x
 have_court_mage_cast_charm_spell_desc;Charm the target with a magic spell. Improves the opinion of the target, who will always accept diplomatic interactions and not take any hostile actions.;;;;;;;;;;;;;x
 cast_charm_spell;Cast Charm;;;;;;;;;;;;;x
 cast_charm_spell_desc;Charm the target with a magic spell. Improves the opinion of the target, who will always accept diplomatic interactions and not take any hostile actions.;;;;;;;;;;;;;x
-spell_charm_tooltip;§Y[Root.GetBestName]§! will have a better opinion of you for a time.;;;;;;;;;;;;;x
+spell_charm_tooltip;ï¿½Y[Root.GetBestName]ï¿½! will have a better opinion of you for a time.;;;;;;;;;;;;;x
 have_court_mage_cast_heal_spell;Cast Heal (Court Mage);;;;;;;;;;;;;x
 have_court_mage_cast_heal_spell_desc;Heal can immediately close open wounds, mend broken bones and cure any illnesses.;;;;;;;;;;;;;x
 have_court_mage_cast_heal_spell_self;Cast Heal (Court Mage);;;;;;;;;;;;;x
@@ -191,15 +191,15 @@ cast_heal_spell;Cast Heal;;;;;;;;;;;;;x
 cast_heal_spell_desc;Heal can immediately close open wounds, mend broken bones and cure any illnesses.;;;;;;;;;;;;;x
 cast_heal_spell_self;Cast Heal;;;;;;;;;;;;;x
 cast_heal_spell_self_desc;Heal can immediately close open wounds, mend broken bones and cure any illnesses.;;;;;;;;;;;;;x
-spell_heal_tooltip;§Y[Root.GetBestName]§! will lose any bad health traits, except '§YStressed§!' and '§YDepressed§!';;;;;;;;;;;;;x
+spell_heal_tooltip;ï¿½Y[Root.GetBestName]ï¿½! will lose any bad health traits, except 'ï¿½YStressedï¿½!' and 'ï¿½YDepressedï¿½!';;;;;;;;;;;;;x
 spell_glamour;Cast Glamour;;;;;;;;;;;;;x
 spell_glamour_desc;With Glamour you can make yourself attractive by hiding the age and any bodily defects under a veil of magic.;;;;;;;;;;;;;x
-spell_glamour_tooltip;§Y[Root.GetBestName]§! will gain the trait '§YAttractive§!' and will lose all bad congenital traits;;;;;;;;;;;;;x
+spell_glamour_tooltip;ï¿½Y[Root.GetBestName]ï¿½! will gain the trait 'ï¿½YAttractiveï¿½!' and will lose all bad congenital traits;;;;;;;;;;;;;x
 spell_foresight_court_mage;Have Court Mage Cast Foresight;;;;;;;;;;;;;x
 spell_foresight_court_mage_desc;There are many dangers lurking around that could be easily avoided if you just knew about them. Foresight is the spell for just such cases.;;;;;;;;;;;;;x
 spell_foresight;Cast Foresight;;;;;;;;;;;;;x
 spell_foresight_desc;There are many dangers lurking around that could be easily avoided if you just knew about them. Foresight is the spell for just such cases.;;;;;;;;;;;;;x
-spell_foresight_tooltip;All plots against §Y[Root.GetBestName]§! will be revealed;;;;;;;;;;;;;x
+spell_foresight_tooltip;All plots against ï¿½Y[Root.GetBestName]ï¿½! will be revealed;;;;;;;;;;;;;x
 have_court_mage_cast_protect_spell;Cast Protection (Court Mage);;;;;;;;;;;;;x
 have_court_mage_cast_protect_spell_desc;Protection can save someone from untimely demise by hand of assassin or accident, although it can't stop natural death.;;;;;;;;;;;;;x
 cast_protect_spell;Cast Protection;;;;;;;;;;;;;x
@@ -208,7 +208,7 @@ have_court_mage_cast_protect_spell_self;Cast Protection (Court Mage);;;;;;;;;;;;
 have_court_mage_cast_protect_spell_self_desc;Protection can save someone from untimely demise by hand of assassin or accident, although it can't stop natural death.;;;;;;;;;;;;;x
 cast_protect_spell_self;Cast Protection;;;;;;;;;;;;;x
 cast_protect_spell_self_desc;Protection can save someone from untimely demise by hand of assassin or accident, although it can't stop natural death.;;;;;;;;;;;;;x
-spell_protection_tooltip;§Y[Root.GetBestName]§! will be able to avoid death by unnatural cause once.;;;;;;;;;;;;;x
+spell_protection_tooltip;ï¿½Y[Root.GetBestName]ï¿½! will be able to avoid death by unnatural cause once.;;;;;;;;;;;;;x
 spell_siege_court_mage;Have Court Mage Assist Siege;;;;;;;;;;;;;x
 spell_siege_court_mage_desc;Siege is a long and tiring thing, but with support of magic you can speed it up considerably.;;;;;;;;;;;;;x
 spell_siege;Assist Siege with Magic;;;;;;;;;;;;;x
@@ -231,3 +231,6 @@ give_tower_to_mage;Give Tower to Mage;;;;;;;;;;;;;x
 give_tower_to_mage_desc;Give an unoccupied mage tower to a sorcerer at court.;;;;;;;;;;;;;x
 give_tower_to_mage2;Give Tower to Mage;;;;;;;;;;;;;x
 give_tower_to_mage2_desc;Give an unoccupied mage tower to a sorcerer at court.;;;;;;;;;;;;;x
+#W3 decisions
+enter_novigrad;Enter Novigrad;;;;;;;;;;;;;x
+enter_novigrad_desc;It is time for the Hierarch of Novigrad to recognize us as Defenders of the Faith and assist us in the war against the infidels.;;;;;;;;;;;;;x

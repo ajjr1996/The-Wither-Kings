@@ -1,0 +1,604 @@
+namespace = tnw
+
+################################################
+# Radovid
+################################################
+# Radovid Starting Narrative
+long_character_event = {
+	id = tnw.1
+	desc = EVTDESCtnw.1
+	title = EVTNAMEtnw.1
+	picture = GFX_evt_war_planning
+	
+	hide_from = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = tnw_radovid
+		start_date = 1275.1.1
+	}
+	
+	option = { #Eternal Fire chain
+		name = EVTOPTAtnw.1
+		set_character_flag = tnw_radovid_fire
+		random = {
+			chance = 50
+			add_trait=zealous
+		}
+
+		long_character_event = { id = tnw.200 days = 30 }
+		ai_chance = { factor = 3 }
+	}
+
+	option = { #Diplomacy chain
+		name = EVTOPTBtnw.1
+		long_character_event = { id = tnw.100 days = 30 }
+
+		set_character_flag = tnw_radovid_diplomacy
+		ai_chance = { factor = 1 }
+	}
+}
+
+######## Diplomacy path
+# Radovid - Temerian aid
+long_character_event = {
+	id = tnw.100
+	desc = EVTDESCtnw.100
+	title = EVTNAMEtnw.100
+	picture = GFX_evt_bandits
+	
+	hide_from = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = tnw_radovid_diplomacy
+	}
+	
+	#accept offer
+	option = {
+		name = EVTOPTAtnw.100
+		set_global_flag = temerian_help_radovid
+		hidden_tooltip = {
+			random_realm_character = {
+				limit = {
+					liege = { character = ROOT }
+					has_minor_title = title_commander
+				}
+				remove_title = title_commander
+			}
+		}
+
+		any_character = {
+			limit = { age=1 has_character_flag = tnw_roche }
+			move_character = ROOT
+			give_minor_title = title_commander
+			opinion = {
+				modifier = opinion_loyal_servant
+				who = ROOT
+				years = 5	
+			}
+		}
+
+		spawn_unit = {
+			province = capital_scope #42 tretogor
+			home = 5
+			leader = 155309 # Roche
+			owner = THIS
+			troops = {
+				light_infantry = {1000 1000}
+				heavy_infantry = {300 300}
+				archers = {200 200}
+				light_cavalry = {100 100}
+				knights = {20 20}
+			}
+			disband_on_peace = yes
+		}
+		ai_chance = { factor = 3 }
+	}
+
+	#deciline
+	option = { 
+		name = EVTOPTBtnw.100
+		ai_chance = { factor = 1 }
+	}
+
+	after = {
+		long_character_event = { id = tnw.101 days = 40 }
+	}
+}
+
+# Radovid - Skellige
+long_character_event = {
+	id = tnw.101
+	desc = EVTDESCtnw.101
+	title = EVTNAMEtnw.101
+	picture = GFX_evt_vikings_arriving_oldgods
+	
+	hide_from = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = tnw_radovid_diplomacy
+	}
+	
+	#ask for help
+	option = {
+		name = EVTOPTAtnw.101
+		any_independent_ruler = {
+			limit = { has_landed_title = k_skellig}
+			letter_event = { id = nilfgaard.102 tooltip = EVTTOOLTIPnilfgaard.102 days = 3 }
+		}
+		ai_chance = { factor = 3 }
+	}
+
+	#deciline
+	option = { 
+		name = EVTOPTBtnw.101
+		ai_chance = { factor = 1 }
+	}
+
+	after = {
+		long_character_event = { id = tnw.102 days = 60 }
+	}
+}
+
+# Radovid - Kovir
+long_character_event = {
+	id = tnw.102
+	desc = EVTDESCtnw.102
+	title = EVTNAMEtnw.102
+	picture = GFX_evt_powerful_ruler
+	
+	hide_from = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = tnw_radovid_diplomacy
+	}
+	
+	#ask for help
+	option = {
+		name = EVTOPTAtnw.102
+		any_independent_ruler = {
+			limit = { has_landed_title = k_kovir_poviss}
+			letter_event = { id = nilfgaard.102 tooltip = EVTTOOLTIPnilfgaard.102 days = 3 }
+		}
+		ai_chance = { factor = 3 }
+	}
+
+	#deciline
+	option = { 
+		name = EVTOPTBtnw.102
+		ai_chance = { factor = 1 }
+	}
+}
+########Eternal fire path
+
+# Radovid - witch hunts
+long_character_event = {
+	id = tnw.200
+	desc = EVTDESCtnw.200
+	title = EVTNAMEtnw.200
+	picture = GFX_evt_witch_burning
+	
+	hide_from = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = tnw_radovid_fire
+	}
+	
+	#leave them
+	option = { 
+		name = EVTOPTAtnw.200
+		ai_chance = { factor = 1 }
+	}
+
+	#imprison
+	option = {
+		name = EVTOPTBtnw.200
+		any_realm_character = {
+			limit = { 
+				OR = {
+					trait = sorcerer
+					trait = alchemist
+					trait = adept
+				}
+			} 
+			imprison = ROOT
+		}
+		piety = 100
+		ai_chance = { factor = 3 }
+	}
+
+	#burn
+	option = { 
+		name = EVTOPTCtnw.200
+		show_trait=lunatic
+		any_realm_character = {
+			limit = { 
+				OR = {
+					trait = sorcerer
+					trait = alchemist
+					trait = adept
+				}
+			} 
+			death = {
+				death_reason = death_execution_burning
+				killer = ROOT
+			}
+		}
+		random = {
+			chance = 30
+			add_trait=lunatic
+		}
+		piety = 200
+		ai_chance = { factor = 3 }
+	}
+
+	after = {
+		long_character_event = { id = tnw.201 days = 40 }
+	}
+}
+
+long_character_event = {
+	id = tnw.201
+	desc = EVTDESCtnw.201
+	title = EVTNAMEtnw.201
+	picture = GFX_evt_riders_night_hf
+	
+	hide_from = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = tnw_radovid_fire
+	}
+	
+	#Expel order
+	option = {
+		name = EVTOPTAtnw.201
+		hidden_tooltip = {
+				d_flaming_rose = {
+					holder_scope = {
+						character_event = {
+							id = flaming_rose.50
+						}
+					}
+				}
+				add_character_modifier = {
+					name = expelled_d_flaming_rose
+					duration = -1
+					inherit = yes
+				}
+		}
+		piety = -200
+		wealth = 200
+		ai_chance = { factor = 2 }
+	}
+
+	#leave them
+	option = { 
+		name = EVTOPTBtnw.201
+		ai_chance = { factor = 1 }
+	}
+
+	#Help them
+	option = { 
+		name = EVTOPTCtnw.201
+		if = {
+			limit = { NOT = { trait = greedy } }
+			random = {
+				chance = 30
+				add_trait = charitable
+			}
+		}
+		if = {
+			limit = { trait = greedy }
+			random = {
+				chance = 40
+				remove_trait = greedy
+			}
+		}
+		wealth = -100
+		piety = 150
+		ai_chance = { factor = 1 }
+	}
+
+	after = {
+		long_character_event = { id = tnw.202 days = 60 }
+	}
+}
+
+long_character_event = {
+	id = tnw.202
+	desc = EVTDESCtnw.202
+	title = EVTNAMEtnw.202
+	picture = GFX_evt_catching_heretic
+	
+	hide_from = yes
+	is_triggered_only = yes
+
+	trigger = {
+		c_155007 = {is_alive = true} #Keira
+		has_character_flag = tnw_radovid_fire
+	}
+
+	immediate = {
+		c_155007 = { #Keira
+			move_character = ROOT
+		}
+	}
+	
+	#employ her
+	option = {
+		name = EVTOPTAtnw.202
+		piety = -50
+		c_155007 = { give_job_title = job_mage }
+		ai_chance = { factor = 1 }
+	}
+
+	#imprison
+	option = { 
+		name = EVTOPTBtnw.202
+		c_155007 = { imprison = ROOT }
+		ai_chance = { factor = 1 }
+	}
+
+	#kill
+	option = { 
+		name = EVTOPTCtnw.202
+		c_155007 = {
+			death = {
+				death_reason = death_execution_impaling
+				killer = ROOT
+			}
+		}
+		piety = 50
+		ai_chance = { factor = 5 }
+	}
+}
+
+long_character_event = {
+	id = tnw.203
+	desc = EVTDESCtnw.203
+	title = EVTNAMEtnw.203
+	picture = GFX_evt_busy_trading_dock_republic
+	
+	hide_from = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = tnw_radovid_fire
+	}
+
+	#ok
+	option = {
+		name = EVTOPTAtnw.203
+		ai_chance = { factor = 1 }
+	}
+}
+
+################################################
+# End 3th Northen War
+################################################
+## Radovid wins
+narrative_event = {
+	id = tnw.1000
+	desc = EVTDESCtnw.1000
+	title = EVTNAMEtnw.1000
+	picture = GFX_evt_radovid_win
+	
+	hide_from = yes
+	is_triggered_only = yes
+	
+	#Emhyr
+	option = {
+		name = EVTOPTBtnw.1000
+		trigger = {
+			has_landed_title = e_nilfgaard 
+		}
+		ai_chance = { factor = 5 }
+		any_vassal = {
+			opinion = {
+				modifier = opinion_sore_loser
+				who = ROOT
+				years = 5	
+			}
+		}
+	}
+
+	#Radovid create empire
+	option = {
+		name = EVTOPTCtnw.1000
+		trigger = {
+			has_landed_title = k_redania 
+		}
+		prestige = 500
+
+		ai_chance = { factor = 5 }
+		primary_title = {
+			create_title = {
+				tier = EMPEROR
+				landless = no
+				temporary = no
+				custom_created = yes
+				culture = ROOT
+				holder = ROOT
+				base_title = THIS
+				copy_title_laws = yes
+			}
+
+			new_title = {
+				copy_title_history = PREV
+			}
+		}
+
+		if = {
+			limit = {
+				has_global_flag = radovid_enter_novigrad
+			}
+			k_eternal_fire = {
+				holder_scope = {
+					set_defacto_liege = ROOT
+				}
+			}
+		}
+
+		ROOT = {	
+			gain_title = k_aedirn
+			gain_title = k_temeria
+			gain_title = k_mahakam
+			gain_title = k_lyria_rivia
+			gain_title = k_sodden
+			gain_title = k_brugge
+			gain_title = k_smocze_coast
+			gain_title = k_verden
+			gain_title = k_kerack
+			gain_title = k_cidaris
+
+			gain_title = d_ban_ard
+			gain_title = d_ard_kestrel
+
+			# Banish nilfgaardians
+			gain_title = d_wyzima
+			gain_title = c_wyzima
+			gain_title = c_old_wyzima
+		}
+
+		if = {
+			limit = {
+				has_global_flag = temerian_help_radovid
+			}
+			any_vassal = {
+				limit = {culture = temerian}
+				opinion = {
+					modifier = opinion_traitor
+					who = ROOT
+					years = 10	
+				}
+			}
+
+			any_character = {
+				limit = { age=1 has_character_flag = tnw_roche }
+				banish = yes
+				add_rival = ROOT
+				remove_opinion = {
+					modifier = opinion_loyal_servant
+					who = ROOT
+				}
+			}
+		}
+		clr_global_flag = temerian_help_radovid
+	}
+
+	#Radovid restore borders
+	option = {
+		name = EVTOPTAtnw.1000
+		trigger = {
+			has_landed_title = k_redania 
+		}
+		ai_chance = { factor = 5 }
+		prestige = 500
+
+		gain_title = d_ban_ard
+		gain_title = d_ard_kestrel
+
+		k_aedirn = {set_defacto_liege = THIS reset_coa = THIS}
+		k_mahakam = {set_defacto_liege = THIS reset_coa = THIS}
+		k_lyria_rivia = {set_defacto_liege = THIS reset_coa = THIS}
+		k_sodden = {set_defacto_liege = THIS reset_coa = THIS}
+		k_brugge = {set_defacto_liege = THIS reset_coa = THIS}
+		k_verden = {set_defacto_liege = THIS reset_coa = THIS}
+		k_kerack = {set_defacto_liege = THIS reset_coa = THIS}
+		k_cidaris = {set_defacto_liege = THIS reset_coa = THIS}
+
+		
+		if = {
+			limit = { c_24997 = {is_alive = yes}} #Anais LaValet
+			k_temeria = {gain_title = 24997}
+			d_wyzima = {gain_title = 24997}
+			c_wyzima = {gain_title = 24997}
+			c_old_wyzima = {gain_title = 24997}
+		}
+		else = {
+			random_character = {
+				limit = { 
+					age=1 
+					has_claim = k_temeria
+					culture = temerian 
+					} 
+				k_temeria = {gain_title = PREV}
+				d_wyzima = {gain_title = PREV}
+				c_wyzima = {gain_title = PREV}
+				c_old_wyzima = {gain_title = PREV}
+			}
+		}
+		# else if should every duke become independent
+
+		k_temeria = {set_defacto_liege = THIS reset_coa = THIS}
+	}
+
+	after = {
+		clr_character_flag = tnw_radovid_diplomacy
+		clr_character_flag = tnw_radovid_fire
+		#clr_global_flag = radovid_enter_novigrad
+		clr_global_flag = temerian_help_radovid
+	}
+}
+
+## Emhyr wins
+narrative_event = {
+	id = tnw.1001
+	desc = EVTDESCtnw.1001
+	title = EVTNAMEtnw.1001
+	picture = GFX_evt_emhyr_win
+	
+	hide_from = yes
+	is_triggered_only = yes
+	
+	#Emhyr
+	option = {
+		name = EVTOPTAtnw.1001
+		trigger = {
+			has_landed_title = e_nilfgaard 
+		}
+	}
+
+	#Radovid
+	option = {
+		name = EVTOPTBtnw.1001
+		prestige = 500
+		trigger = {
+			NOT = {has_landed_title = e_nilfgaard}
+		}
+	}
+
+	after = {
+		clr_character_flag = tnw_radovid_diplomacy
+		clr_character_flag = tnw_radovid_fire
+		#clr_global_flag = radovid_enter_novigrad
+		clr_global_flag = temerian_help_radovid
+	}
+}
+
+
+
+##Filippa chain
+
+######## Emhyr
+## Need to find ciri
+## geralt arrive
+## Ciri visited
+## undvik Gone Battle
+## Ciri backed 
+## abdicate decision
+
+######### Kovir
+## War info
+## Welcome mages
+
+####### Dijkstra
+## take power in redania??
+
+####### Anails LaValet??
+######Skelige ??

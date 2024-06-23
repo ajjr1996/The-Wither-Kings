@@ -3,19 +3,19 @@
 # W_battle_events
 demotivated_troops;Demotivated Troops;;;;;;;;;;;;;x
 # W_banker_events
-loan_100;Taken 100¤ Loan;;;;;;;;;;;;;x
+loan_100;Taken 100ï¿½ Loan;;;;;;;;;;;;;x
 loan_100_desc;This character character has taken 100 gold loan.;;;;;;;;;;;;;x
-loan_200;Taken 200¤ Loan;;;;;;;;;;;;;x
+loan_200;Taken 200ï¿½ Loan;;;;;;;;;;;;;x
 loan_200_desc;This character character has taken 200 gold loan.;;;;;;;;;;;;;x
-loan_300;Taken 300¤ Loan;;;;;;;;;;;;;x
+loan_300;Taken 300ï¿½ Loan;;;;;;;;;;;;;x
 loan_300_desc;This character character has taken 300 gold loan.;;;;;;;;;;;;;x
 denied_loan;Bank Denied a Loan;;;;;;;;;;;;;x
 denied_loan_desc;The bank didn't see you as credible enough business partner to give you a loan.;;;;;;;;;;;;;x
-refused_repaying_loan_100;Refused to Repay the 100¤ Loan;;;;;;;;;;;;;x
+refused_repaying_loan_100;Refused to Repay the 100ï¿½ Loan;;;;;;;;;;;;;x
 refused_repaying_loan_100_desc;This character refused to repay a loan ruining his image as credible business partner.;;;;;;;;;;;;;x
-refused_repaying_loan_200;Refused to Repay the 200¤ Loan;;;;;;;;;;;;;x
+refused_repaying_loan_200;Refused to Repay the 200ï¿½ Loan;;;;;;;;;;;;;x
 refused_repaying_loan_200_desc;This character refused to repay a loan ruining his image as credible business partner.;;;;;;;;;;;;;x
-refused_repaying_loan_300;Refused to Repay the 300¤ Loan;;;;;;;;;;;;;x
+refused_repaying_loan_300;Refused to Repay the 300ï¿½ Loan;;;;;;;;;;;;;x
 refused_repaying_loan_300_desc;This character refused to repay a loan ruining his image as credible business partner.;;;;;;;;;;;;;x
 # W_childhood_events
 having_a_good_time;Having a Good Time;;;;;;;;;;;;;x
@@ -45,7 +45,7 @@ attended_velen;Attended Velen Celebration;;;;;;;;;;;;;x
 held_birke;Hosted Birke Celebration;;;;;;;;;;;;;x
 attended_birke;Attended Birke Celebration;;;;;;;;;;;;;x
 # W_flaming_rose_events
-expelled_flaming_rose;Expelled the Order of the Flaming Rose;;;;;;;;;;;;;x
+expelled_d_flaming_rose;Expelled the Order of the Flaming Rose;;;;;;;;;;;;;x
 vulnerable;Vulnerable;;;;;;;;;;;;;x
 # W_health_events
 blind_increased_senses;Improved Senses;;;;;;;;;;;;;x
