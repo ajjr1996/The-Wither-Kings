@@ -3095,6 +3095,14 @@ third_nilfgaard_invasion = {
 			narrative_event = { id = tnw.1000 }
 		}
 	}
+
+	on_defender_leader_death = {
+		end_war = success
+	}
+
+	on_attacker_leader_death = {
+		end_war = reverse_demand
+	}
 }
 #haak_invasion
 #border_conflict

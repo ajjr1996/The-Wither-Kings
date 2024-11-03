@@ -378,6 +378,194 @@ long_character_event = {
 	}
 }
 
+
+################################################
+# Emhyr
+################################################
+# Emhyr Starting Narrative
+long_character_event = {
+	id = tnw.2
+	desc = EVTDESCtnw.2
+	title = EVTNAMEtnw.2
+	picture = GFX_evt_bloodlines
+	
+	hide_from = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = tnw_emhyr
+		start_date = 1275.1.1
+	}
+	
+	option = {
+		name = EVTOPTAtnw.2
+	}
+
+	after = {
+		long_character_event = { id = tnw.300 days = 70 }
+		long_character_event = { id = tnw.303 days = 90 }
+	}
+}
+
+# Talar propose
+long_character_event = {
+	id = tnw.300
+	desc = EVTDESCtnw.300
+	title = EVTNAMEtnw.300
+	picture = GFX_evt_spymaster
+	
+	hide_from = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = tnw_emhyr
+		#!!!!!!!!!!!!!!!!!!!NOT = { has_global_flag = temerian_help_radovid}
+		c_9 = {is_alive = true} #Radovid
+		c_155300 = {is_alive = true} #Thaler
+	}
+	
+	option = {
+		name = EVTOPTAtnw.300
+		ai_chance = {
+			factor = 1
+			modifier = { factor = 2 }
+			modifier = {
+				factor = 0
+				k_redania = {
+					holder_scope = {
+						ai = no
+					}
+				}
+			}
+		}
+		random = { 
+			chance = 50
+			c_9 = {
+				character_event = { id = tnw.301 days = 50 } 
+			}
+		}	
+	}
+
+	option = {
+		name = EVTOPTBtnw.300
+		ai_chance = { factor = 2 }
+	}
+}
+
+# Radovid assasination - Radovid event 
+character_event = {
+	id = tnw.301
+	hide_window = yes
+	is_triggered_only = yes
+	#TODO check if war is ongoing and radovid lives
+	
+	option = {
+		set_global_flag = radovid_assasination
+		e_nilfgaard = {
+			holder_scope = {
+				letter_event = { id = tnw.302 }
+			}
+		}
+		death = {
+			death_reason = death_murder_unknown
+		}
+	}
+}
+
+# Assassination successful - Nilfgaard notification
+letter_event = {
+	id = tnw.302
+	desc = EVTDESCtnw.302
+	
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	trigger = {
+		has_character_flag = tnw_emhyr
+	}
+	
+	option = {
+		name = EVTOPTAtnw.302
+	}
+}
+
+# ciri visit
+long_character_event = {
+	id = tnw.303
+	desc = EVTDESCtnw.303
+	title = EVTNAMEtnw.303
+	picture = GFX_evt_pilgrims_epic_journey
+	
+	hide_from = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = tnw_emhyr
+		c_105000 = {is_alive = true} #Ciri
+	}
+	
+	//TODO add more options
+	option = {
+		name = EVTOPTAtnw.303
+		character_event = { id = tnw.304 }
+	}
+}
+
+# ciri respond
+character_event = {
+	id = tnw.304
+	desc = EVTDESCtnw.304
+	picture = GFX_evt_daughter_asking_father
+	
+	hide_from = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = tnw_emhyr
+		c_105000 = {is_alive = true} #Ciri
+	}
+	
+	option = {
+		name = EVTOPTAtnw.304
+		long_character_event = { id = tnw.305 days= 30 random = 60 } #TODO emhyr must win war 
+	}
+}
+
+//Ciri return
+long_character_event = {
+	id = tnw.305
+	desc = EVTDESCtnw.305
+	title = EVTNAMEtnw.305
+	picture = GFX_evt_prospering_province 
+	
+	hide_from = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = tnw_emhyr
+		c_105000 = {is_alive = true} #Ciri
+	}
+	
+	option = {
+		name = EVTOPTAtnw.305
+		c_105000 = {
+			set_father = ROOT
+			dynasty = ROOT
+		}
+	}
+
+	option = {
+		name = EVTOPTBtnw.305
+		#set_player_character = 105000
+		c_105000 = {
+			set_father = ROOT
+			dynasty = ROOT
+		}
+		abdicate_to = c_105000
+	}
+}
+
+
 ################################################
 # End 3th Northen War
 ################################################
@@ -563,6 +751,31 @@ narrative_event = {
 		trigger = {
 			has_landed_title = e_nilfgaard 
 		}
+		if = {
+			limit = {
+				has_global_flag = radovid_assasination
+			}
+			if = {
+				limit = { c_24997 = {is_alive = yes}} #Anais LaValet
+				k_temeria = {gain_title = 24997}
+				d_wyzima = {gain_title = 24997}
+				c_wyzima = {gain_title = 24997}
+				c_old_wyzima = {gain_title = 24997}
+			}
+			else = {
+				random_character = {
+					limit = { 
+						age=1 
+						has_claim = k_temeria
+						culture = temerian 
+						} 
+					k_temeria = {gain_title = PREV}
+					d_wyzima = {gain_title = PREV}
+					c_wyzima = {gain_title = PREV}
+					c_old_wyzima = {gain_title = PREV}
+				}
+			}
+		}
 	}
 
 	#Radovid
@@ -578,6 +791,7 @@ narrative_event = {
 		clr_character_flag = tnw_radovid_fire
 		#clr_global_flag = radovid_enter_novigrad
 		clr_global_flag = temerian_help_radovid
+		clr_global_glag = radovid_assasination
 	}
 }
 
@@ -586,12 +800,12 @@ narrative_event = {
 ##Filippa chain
 
 ######## Emhyr
-## Need to find ciri
-## geralt arrive
+## Find Ciri
+## Talar and assasination
 ## Ciri visited
-## undvik Gone Battle
-## Ciri backed 
-## abdicate decision
+## Asassination event (3 endings)
+## Ciri return and abdicate 
+## Skelige attack
 
 ######### Kovir
 ## War info

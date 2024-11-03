@@ -4,6 +4,10 @@ EVTDESCtnw.1;The Battle of Velen ended inconclusively, we stopped the Nilfgardia
 EVTOPTAtnw.1;Eternal Fire will support our war.;;;;;;;;;;;;;x;
 EVTOPTBtnw.1;We need to find allies.;;;;;;;;;;;;;x;
 
+EVTNAMEtnw.2;Legacy;;;;;;;;;;;;;x;
+EVTDESCtnw.2;The North is falling, our last opponent Radovid has been able to slow our march, but soon he will also be destroyed and the whole known world will be united under the Nilfgaard sun. But what will come next? You have no legitimate heir, after your death the empire will be divided among the minor lords and your legacy will be lost. But perhaps there is someone who could take over from you?;;;;;;;;;;;;;x;
+EVTOPTAtnw.2;I must find my daughter.;;;;;;;;;;;;;x;
+
 EVTNAMEtnw.100;Temerian aid;;;;;;;;;;;;;x;
 EVTDESCtnw.100;After the death of King Foltest, his kingdom disintegrated. The divided nobility could not resist the invasion from the south. Now all of Temeria is under the control of the Nilfgaard, and Emhyr sits on the throne in Wyzim. However, there are still people loyal to the old king, hoping to restore freedom to Temeria. Vernon Roche is ready to help us in our struggle against Emhyr, if we give him guarantees that after the war Temeria will keep its independence.;;;;;;;;;;;;;x;
 EVTOPTAtnw.100;Temeria will reclaim its freedom.;;;;;;;;;;;;;x;
@@ -40,6 +44,26 @@ EVTOPTCtnw.202;Do you take me for a fool?;;;;;;;;;;;;;x;
 EVTNAMEtnw.203;Novigrad;;;;;;;;;;;;;x;
 EVTDESCtnw.203;The Hierarch of Novigrad understood that we were the only ones who could stop the infidel armies from the south. With Novigrad's support we should win this war.;;;;;;;;;;;;;x;
 EVTOPTAtnw.203;Time to push the blacks out of the North.;;;;;;;;;;;;;x;
+
+EVTNAMEtnw.300;Cobbler with a monocle;;;;;;;;;;;;;x;
+EVTDESCtnw.300;After the fall of Temeria, the remnants of its army fought as guerrillas, or joined Radovid. However, there are also those who are willing to cooperate. Thaler, the head of Temerian intelligence, offered to help us destroy Radovid, if Temeria would get more autonomy after the war.;;;;;;;;;;;;;x;
+EVTOPTAtnw.300;Kill Radovid and you will get your freedom.;;;;;;;;;;;;;x;
+EVTOPTBtnw.300;We don't need your help.;;;;;;;;;;;;;x;
+
+EVTDESCtnw.302;Radovid is dead. Without him, Redania will not continue the fight.;;;;;;;;;;;;;x;
+EVTOPTAtnw.302;Good.;;;;;;;;;;;;;x;
+
+EVTNAMEtnw.303;Cirilla Fiona Elen Riannon;;;;;;;;;;;;;x;
+EVTDESCtnw.303;Many years have passed since you last saw your daughter. She is now a grown woman. The witcher you hired has fulfilled his task. He brought your daughter before you. You invited her to your chamber for a private conversation.;;;;;;;;;;;;;x;
+EVTOPTAtnw.303;Offer her to become empress.;;;;;;;;;;;;;x;
+
+EVTDESCtnw.304;The girl did not take best to your proposal. She recalled that in the past you had wanted to kidnap her and kill her friends, and now you only remembered her when you needed her. She left indignantly and furiously from your chamber.;;;;;;;;;;;;;x;
+EVTOPTAtnw.304;Will I ever see her again?;;;;;;;;;;;;;x;
+
+EVTNAMEtnw.305;Return of the Swallow;;;;;;;;;;;;;x;
+EVTDESCtnw.305;The last time you saw her she was furious with you. But now she has rethought the matter and decided to accept your proposal. Ciri will become empress because she thinks she can do more good that way.;;;;;;;;;;;;;x;
+EVTOPTAtnw.305;Welcome home daughter.;;;;;;;;;;;;;x;
+EVTOPTBtnw.305;Abdicate, and leave the ruling to your daughter.;;;;;;;;;;;;;x;
 
 EVTNAMEtnw.1000;Victory of the North;;;;;;;;;;;;;x;
 EVTDESCtnw.1000;Thanks to your tactical genius, Redania defeated the invader from the south. Now is the time to decide the fate of the North. Should we return to the old order before the war? Or should the North be united under your leadership? ;;;;;;;;;;;;;x;
