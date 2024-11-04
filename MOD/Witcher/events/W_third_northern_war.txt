@@ -419,9 +419,14 @@ long_character_event = {
 	
 	trigger = {
 		has_character_flag = tnw_emhyr
-		#!!!!!!!!!!!!!!!!!!!NOT = { has_global_flag = temerian_help_radovid}
+		NOT = { has_global_flag = temerian_help_radovid}
 		c_9 = {is_alive = true} #Radovid
 		c_155300 = {is_alive = true} #Thaler
+		ROOT = {
+				any_war = {
+					using_cb = third_nilfgaard_invasion
+				}
+		}
 	}
 	
 	option = {
@@ -458,6 +463,13 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	#TODO check if war is ongoing and radovid lives
+	trigger = {
+		ROOT = {
+				any_war = {
+					using_cb = third_nilfgaard_invasion
+				}
+		}
+	}
 	
 	option = {
 		set_global_flag = radovid_assasination
@@ -527,7 +539,11 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAtnw.304
-		long_character_event = { id = tnw.305 days= 30 random = 60 } #TODO emhyr must win war 
+		set_global_flag = ciri_will_return
+		if = {
+			limit = {has_global_flag = emhyr_win_war}
+			long_character_event = { id = tnw.305 days= 30 random = 60 }
+		}
 	}
 }
 
@@ -748,6 +764,7 @@ narrative_event = {
 	option = {
 		name = EVTOPTAtnw.1001
 		prestige = 500
+		set_global_flag = emhyr_win_war
 		trigger = {
 			has_landed_title = e_nilfgaard 
 		}
@@ -792,27 +809,10 @@ narrative_event = {
 		#clr_global_flag = radovid_enter_novigrad
 		clr_global_flag = temerian_help_radovid
 		clr_global_glag = radovid_assasination
+
+		if = {
+			limit = {has_global_flag = ciri_will_return}
+			character_event = { id = tnw.305 days = 30 random = 60 }
+		}
 	}
 }
-
-
-
-##Filippa chain
-
-######## Emhyr
-## Find Ciri
-## Talar and assasination
-## Ciri visited
-## Asassination event (3 endings)
-## Ciri return and abdicate 
-## Skelige attack
-
-######### Kovir
-## War info
-## Welcome mages
-
-####### Dijkstra
-## take power in redania??
-
-####### Anails LaValet??
-######Skelige ??
