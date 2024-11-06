@@ -572,12 +572,25 @@ long_character_event = {
 
 	option = {
 		name = EVTOPTBtnw.305
-		#set_player_character = 105000
 		c_105000 = {
 			set_father = ROOT
 			dynasty = ROOT
 		}
 		abdicate_to = c_105000
+	}
+
+	after = {
+		hidden_tooltip = {
+			c_105000 = {
+				remove_trait = cannot_marry
+				remove_trait = in_hiding
+			}
+			transfer_scaled_wealth = {
+				from = root
+				to = 105000
+				value = all
+			}
+		}
 	}
 }
 
