@@ -2331,7 +2331,7 @@
 	father=3223 #Eyck
 	mother=2225
 	1251.4.16={ birth=yes } 
-	1307.7.8={ death=yes } 
+	1274.12.30={ death=yes } 
 } 
 3225={ 
 	name=Grodzislaw
@@ -4397,7 +4397,7 @@
 	1201.12.16={ death=yes } 
 } 
 2427={ 
-	name=Zoltán
+	name=Zoltï¿½n
 	dynasty=2009
 	dna=cpgakbajlfj
 	culture=redanian religion=kreve
@@ -4406,7 +4406,7 @@
 	1227.3.18={ death=yes } 
 } 
 2428={ 
-	name=Tamás
+	name=Tamï¿½s
 	dynasty=2009
 	dna=cgbgkbajlfm
 	culture=redanian religion=kreve
@@ -4444,7 +4444,7 @@
 	1257.3.20={ death=yes } 
 } 
 2432={ 
-	name=Márton
+	name=Mï¿½rton
 	dynasty=2009
 	dna=agbnnbahagg
 	culture=redanian religion=kreve
@@ -4503,7 +4503,7 @@
 	1251.6.29={ death=yes } 
 } 
 2438={ 
-	name=Géza
+	name=Gï¿½za
 	dynasty=2009
 	dna=dkbancmhajg
 	culture=redanian religion=kreve

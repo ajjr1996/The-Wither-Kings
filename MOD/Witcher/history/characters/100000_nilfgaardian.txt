@@ -150,11 +150,18 @@
 		effect={clr_character_flag=aok_emhyr}
 	}
 	1275.1.1={
+		effect={
+			set_character_flag = tnw_emhyr
+			narrative_event = {id=tnw.2}
+		}
 		raise_levies={ 
 			location=512 #Findetann
 		}
-		# Note: if possible to split levies, should also be besieging Ard Carraigh (97) and Ban Gleán (95)
+		# Note: if possible to split levies, should also be besieging Ard Carraigh (97) and Ban Gleï¿½n (95)
 	}
+	1275.1.2={ 
+		effect={clr_character_flag=tnw_emhyr}
+	} 
 	1290.1.1={ death=yes } 
 } 
 100007={
@@ -224,7 +231,7 @@
 	1135.11.28={ death=yes } 
 } 
 100055={ 
-	name=Siân
+	name=Siï¿½n
 	female=yes
 	dynasty=20001
 	dna=gdbmmlffddc
@@ -1820,7 +1827,7 @@
 	1368.1.28={ death=yes } 
 } 
 100286={ 
-	name=Brân
+	name=Brï¿½n
 	dynasty=20005
 	dna=jmgahcbkjke
 	culture=nilfgaardian religion=solar
@@ -2330,7 +2337,7 @@
 	1139.10.8={ death=yes } 
 } 
 100358={ 
-	name=Siân
+	name=Siï¿½n
 	female=yes
 	dynasty=20007
 	dna=pbmbjleecdj
@@ -5868,7 +5875,7 @@
 	1149.10.26={ death=yes } 
 } 
 100809={ 
-	name=Brân
+	name=Brï¿½n
 	dynasty=20016
 	dna=pjmijddjggg
 	culture=nilfgaardian religion=solar
@@ -5892,7 +5899,7 @@
 	dynasty=20016
 	dna=pjmdihkodgg
 	culture=nilfgaardian religion=solar
-	father=100809 #Brân
+	father=100809 #Brï¿½n
 	1119.11.22={ birth=yes } 
 	1167.10.16={ death=yes } 
 } 
@@ -5902,7 +5909,7 @@
 	dynasty=20016
 	dna=mnlihdgjggg
 	culture=nilfgaardian religion=solar
-	father=100809 #Brân
+	father=100809 #Brï¿½n
 	1123.10.23={ birth=yes } 
 	1153.12.16={ death=yes } 
 } 
@@ -5911,7 +5918,7 @@
 	dynasty=20016
 	dna=plhmeddjbco
 	culture=nilfgaardian religion=solar
-	father=100809 #Brân
+	father=100809 #Brï¿½n
 	1125.9.16={ birth=yes } 
 	1209.4.2={ death=yes } 
 } 
@@ -6687,7 +6694,7 @@
 	1220.12.30={ death=yes } 
 } 
 100918={ 
-	name=Siân
+	name=Siï¿½n
 	female=yes
 	dynasty=20019
 	dna=fpijhobankf
@@ -7166,7 +7173,7 @@
 	1235.3.23={ death=yes } 
 } 
 100975={ 
-	name=Brân
+	name=Brï¿½n
 	dynasty=20020
 	dna=kjkelfdklob
 	culture=nilfgaardian religion=solar
@@ -7179,7 +7186,7 @@
 	dynasty=20020
 	dna=abkemfjkkab
 	culture=nilfgaardian religion=solar
-	father=100975 #Brân
+	father=100975 #Brï¿½n
 	1229.9.7={ birth=yes } 
 	1293.1.28={ death=yes } 
 } 
@@ -7188,7 +7195,7 @@
 	dynasty=20020
 	dna=obaejfdklob
 	culture=nilfgaardian religion=solar
-	father=100975 #Brân
+	father=100975 #Brï¿½n
 	1232.7.6={ birth=yes } 
 	1275.9.10={ death=yes } 
 } 
@@ -7198,7 +7205,7 @@
 	dynasty=20020
 	dna=pjkelmghljg
 	culture=nilfgaardian religion=solar
-	father=100975 #Brân
+	father=100975 #Brï¿½n
 	1235.7.8={ birth=yes } 
 	1300.12.26={ death=yes } 
 } 
@@ -7208,7 +7215,7 @@
 	dynasty=20020
 	dna=kjeelfoklhl
 	culture=nilfgaardian religion=solar
-	father=100975 #Brân
+	father=100975 #Brï¿½n
 	1239.11.22={ birth=yes } 
 	1300.5.31={ death=yes } 
 } 
@@ -8010,7 +8017,7 @@
 	1272.6.29={ death=yes } 
 } 
 101077={ 
-	name=Siân
+	name=Siï¿½n
 	female=yes
 	dynasty=20022
 	dna=jckgobajhgd
@@ -9250,7 +9257,7 @@
 	1215.10.16={ death=yes } 
 } 
 101271={ 
-	name=Siân
+	name=Siï¿½n
 	female=yes
 	dynasty=20025
 	dna=lgpbgamioij
@@ -9307,7 +9314,7 @@
 	1272.12.10={ death=yes } 
 } 
 101276={ 
-	name=Siân
+	name=Siï¿½n
 	female=yes
 	dynasty=20025
 	dna=hgncabmnaoj
@@ -10658,7 +10665,7 @@
 	1075.10.21={ death=yes } 
 } 
 101454={ 
-	name=Brân
+	name=Brï¿½n
 	dynasty=20029
 	dna=cleiedkfdlf
 	culture=nilfgaardian religion=solar
@@ -10680,7 +10687,7 @@
 	dynasty=20029
 	dna=lleipdlbdli
 	culture=nilfgaardian religion=solar
-	father=101454 #Brân
+	father=101454 #Brï¿½n
 	1080.5.25={ birth=yes } 
 	1125.5.23={ death=yes } 
 } 
@@ -10690,7 +10697,7 @@
 	dynasty=20029
 	dna=blgajdnkdlo
 	culture=nilfgaardian religion=solar
-	father=101454 #Brân
+	father=101454 #Brï¿½n
 	1084.7.18={ birth=yes } 
 	1159.7.11={ death=yes } 
 } 
@@ -10700,7 +10707,7 @@
 	dynasty=20029
 	dna=pleildkfhlf
 	culture=nilfgaardian religion=solar
-	father=101454 #Brân
+	father=101454 #Brï¿½n
 	1087.11.14={ birth=yes } 
 	1130.10.3={ death=yes } 
 } 
@@ -10709,7 +10716,7 @@
 	dynasty=20029
 	dna=flegedmmdlf
 	culture=nilfgaardian religion=solar
-	father=101454 #Brân
+	father=101454 #Brï¿½n
 	1088.6.2={ birth=yes } 
 	1141.2.16={ death=yes } 
 } 
@@ -10886,7 +10893,7 @@
 	1296.10.14={ death=yes } 
 } 
 101478={ 
-	name=Siân
+	name=Siï¿½n
 	female=yes
 	dynasty=20029
 	dna=ckbnbehhcmj

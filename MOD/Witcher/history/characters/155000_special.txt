@@ -54,7 +54,7 @@
 	1301.1.1={ death=yes } 
 } 
 155003={ 
-	name=Sheala # Also known as Síle de Tansarville
+	name=Sheala # Also known as Sï¿½le de Tansarville
 	female=yes
 	dynasty=3014 # de Tancarville
 	culture=koviri religion=lebioda
@@ -406,7 +406,7 @@
 
 ## 155200 - 155300		Druids
 155200={ 
-	name=Myszowór # Mousesack 
+	name=Myszowï¿½r # Mousesack 
 	dynasty=0
 	religion=druidic culture=temerian
 	add_trait=canon add_trait=druid add_trait=strong add_trait=charismatic_negotiator add_trait=human_race
@@ -531,6 +531,14 @@
 			give_minor_title=title_blue_stripes_commander
 		}
 	}
+	1275.1.1={
+		effect={
+			set_character_flag=tnw_roche
+		}
+	}
+	1275.1.2={ 
+		effect={clr_character_flag=tnw_roche}
+	} 
 	1321.1.1={ death=yes } 
 } 
 155310={ 
