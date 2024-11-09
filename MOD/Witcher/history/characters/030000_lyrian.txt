@@ -103,17 +103,21 @@
 	1261.1.1={ 
 		add_trait=scarred
 	} 
-	1283.8.4={ death=yes } 
+	1274.11.15={ 
+		death={ 
+			death_reason=death_battle
+		} 
+	} 
 } 
 30001={
-	name=Anséis
+	name=Ansï¿½is
 	dynasty=6000
 	dna=ihjcljaclgg
 	culture=lyrian religion=melitele
 	add_trait=human_race add_trait=canon 
 	add_trait=duelist add_trait=honest add_trait=skilled_warrior
 	mother=30000 #Meve
-	1244.5.2={ birth=yes } 
+	1253.5.2={ birth=yes } 
 	1308.2.14={ death=yes } 
 } 
 30002={
@@ -129,7 +133,6 @@
 } 
 30003={ #Meve's husband
 	name=Reginald
-	female=yes
 	dna=icjcljodhgg
 	culture=lyrian religion=melitele
 	add_trait=human_race add_trait=canon add_trait=slow add_trait=strong add_trait=lustful
