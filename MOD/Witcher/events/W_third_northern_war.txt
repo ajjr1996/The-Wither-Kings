@@ -26,13 +26,13 @@ long_character_event = {
 			add_trait=zealous
 		}
 
-		long_character_event = { id = tnw.200 days = 30 }
+		long_character_event = { id = tnw.200 days = 30 random = 20}
 		ai_chance = { factor = 3 }
 	}
 
 	option = { #Diplomacy chain
 		name = EVTOPTBtnw.1
-		long_character_event = { id = tnw.100 days = 30 }
+		long_character_event = { id = tnw.100 days = 30 random = 20}
 
 		set_character_flag = tnw_radovid_diplomacy
 		ai_chance = { factor = 1 }
@@ -103,7 +103,7 @@ long_character_event = {
 	}
 
 	after = {
-		long_character_event = { id = tnw.101 days = 40 }
+		long_character_event = { id = tnw.101 days = 40 random = 20}
 	}
 }
 
@@ -138,7 +138,7 @@ long_character_event = {
 	}
 
 	after = {
-		long_character_event = { id = tnw.102 days = 60 }
+		long_character_event = { id = tnw.102 days = 60 random = 20}
 	}
 }
 
@@ -237,7 +237,7 @@ long_character_event = {
 	}
 
 	after = {
-		long_character_event = { id = tnw.201 days = 40 }
+		long_character_event = { id = tnw.201 days = 40 random = 15}
 	}
 }
 
@@ -305,7 +305,7 @@ long_character_event = {
 	}
 
 	after = {
-		long_character_event = { id = tnw.202 days = 60 }
+		long_character_event = { id = tnw.202 days = 60 random = 10}
 	}
 }
 
